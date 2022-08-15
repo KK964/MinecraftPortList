@@ -1,0 +1,12 @@
+name: ${project.name}
+version: ${project.version}
+main: dev.kk964.portscan.mcportscanner.MCPortScanner
+api-version: 1.13
+authors: [ KK964 ]
+description: ${project.description}
+website: https://kk964.dev/
+commands:
+  ports:
+    description: Lists open/closed ports between ranges
+    usage: /ports <start> <end> [open=false]
+    permission: op
