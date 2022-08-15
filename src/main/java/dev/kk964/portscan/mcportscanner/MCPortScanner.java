@@ -51,13 +51,13 @@ public final class MCPortScanner extends JavaPlugin implements CommandExecutor {
             return false;
         }
 
-        if (portStart < 1024 || portStart > 49151) {
-            sender.sendMessage(ChatColor.RED + "Invalid Port Start supplied. Please use numbers between 1024 and 49151");
+        if (portStart < 1 || portStart > 65535) {
+            sender.sendMessage(ChatColor.RED + "Invalid Port Start supplied. Please use numbers between 1 and 65535");
             return false;
         }
 
-        if (portEnd < 1024 || portEnd > 49151) {
-            sender.sendMessage(ChatColor.RED + "Invalid Port End supplied. Please use numbers between 1024 and 49151");
+        if (portEnd < 1 || portEnd > 65535) {
+            sender.sendMessage(ChatColor.RED + "Invalid Port End supplied. Please use numbers between 1 and 65535");
             return false;
         }
 
