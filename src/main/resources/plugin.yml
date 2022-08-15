@@ -8,5 +8,5 @@ website: https://kk964.dev/
 commands:
   ports:
     description: Lists open/closed ports between ranges
-    usage: /ports <start> <end> [open=false]
+    usage: /ports <start> <end> [open=true]
     permission: op
